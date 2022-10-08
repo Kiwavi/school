@@ -1,5 +1,6 @@
 # school
-download zip file    
+download zip file  
+unzip/extract the zip file    
 go to the school-main folder    
 inside school-main folder, create a viirtual environment by typing python -m venv venv    
 activate the virtual environment by typing source venv/bin/activate    
