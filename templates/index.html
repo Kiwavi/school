@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title> HomePage  </title>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="flex flex-col justify-center items-center">
+    <p class="text-2xl text-blue-400 mt-8"> Georgia State University  </p>
+    <img class="object-scale-down h-1/3 w-3/4 mt-8 mb-12" src="{% static 'gsu.jpg' %}">
+</div>
+
+{% endblock content %}

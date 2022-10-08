@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block title %}
+<title> Sports  </title>
+{% endblock %}
+
+{% block content %}
+<div class="flex flex-col justify-center items-center">
+  <p class="text-3xl text-blue-400 mt-8"> Sports  </p>
+  <p class="w-1/2">
+    As part of our extra-curricular activities, sport plays an important role. The most popular sports are football and basketball
+  </p>
+  <div class="flex flex-col items-center justify-center mb-12 mt-8">
+
+    <div class="flex justify-center">
+      <img src="{% static 'baseball.jpg' %}" class="object-scale-down h-104 w-96">
+      <div class="flex flex-col justify-center items-center">
+	Baseball
+      </div>
+    </div>
+    
+    <div class="flex justify-center">
+      <img src="{% static 'football.jpg' %}" class="object-scale-down h-104 w-96">
+      <div class="flex flex-col justify-center items-center">
+	Football
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <img src="{% static 'basketball.jpg' %}" class="object-scale-down h-104 w-96">
+      <div class="flex flex-col justify-center items-center">
+	Basketball
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+{% endblock content %}

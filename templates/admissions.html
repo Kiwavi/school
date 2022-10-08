@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block title %}
+<title> Admissions  </title>
+{% endblock %}
+
+{% block content %}
+
+<div class="flex flex-col justify-center items-center">
+  <p class="text-3xl text-blue-400 mt-8"> Admissions  </p>
+  <img src="{% static 'students.jpeg' %}" class="mb-12 mt-8  object-scale-down h-104 w-3/4">
+  <p> At the university, we offer mainly three programs: Associate Degree, Bachelor's Degree, and Graduate Degree</p>
+  <p class="text-2xl text-blue-400 mt-8"> Requirements for Bachelor's Degree Application  </p>
+  <ul class="mb-8 space-y-1 max-w-md list-disc list-inside text-black-500">
+    <li>
+      Submit an application for admission with a $40 application fee.
+    </li>
+    <li>
+      During the application, you will self-report your cumulative high school GPA. You must submit your official high school transcript after graduation. 
+    </li>
+    <li>
+      Students with a high school unweighted GPA of 2.75 or higher are admitted.
+    </li>
+  </ul>
+
+  <p class="text-2xl text-blue-400 mt-8"> Application Form  </p>
+
+  <div class="mb-12">
+    <form class="container flex flex-col items-center">
+      <div class="mb-6 w-96">
+	<label for="name" class="block mb-2 text-sm font-medium text-black-900 dark:text-black-300"> Full Name </label>
+	<input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required="required" />
+      </div>
+      <div class="mb-6 w-96">
+	<label for="email" class="block mb-2 text-sm font-medium text-black-900 dark:text-black-300">Your email</label>
+	<input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="required">
+      </div>
+      <div class="mb-6 w-96">
+	<label for="address" class="block mb-2 text-sm font-medium text-black-900 dark:text-black-300">Your address </label>
+	<input type="text" id="address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="required">
+      </div>
+      <input type="submit" value="Submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+    </form>
+  </div>
+  
+</div>
+
+
+
+{% endblock content %}
